@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://www.w3cplus.com/demo/css3/base.css">
+    <style type="text/css">
+        #gangbi {
+            width: 100%;
+            height: 3000px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/ZzgbPHidO379.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .nav {
+            position: absolute;
+            top: 100px;
+            left: 1350px;
+            display: flex;
+            justify-content: space-around;
+            z-index: 1;
+            color: white;
+            font-size: 130px;
+        }
+
+        #L {
+            position: absolute;
+            top: 0px;
+            left: 3100px;
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            font-size: 106px;
+            font-style: italic;
+            font-weight: 1500;
+            z-index: 2;
+        }
+
+        #D {
+            position: absolute;
+            top: 180px;
+            left: 3200px;
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            font-size: 55px;
+            z-index: 2;
+        }
+
+        #text1 {
+            position: absolute;
+            top: 1200px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 1;
+            font-size: 400PX
+        }
+
+        .HONG-img {
+            position: absolute;
+            z-index: 1;
+            height: 400px;
+            width: 1100px;
+            left: 2950px;
+            top: 0px;
+            z-index: 1;
+        }
+
+
+
+
+
+        .huibei1-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1900px;
+            z-index: -1;
+        }
+
+        .shouwobi-img {
+            position: relative;
+            z-index: 1;
+            height: 1900px;
+            width: 1550px;
+            left: 1300px;
+            top: 300px;
+        }
+
+
+        .baise-img {
+            position: relative;
+            z-index: 1;
+            height: 1970px;
+            width: 2800px;
+            left: -180px;
+            top: 350px;
+        }
+
+        #lamy {
+            position: absolute;
+            top: 3450px;
+            left: 3200px;
+            color: black;
+            z-index: 2;
+            font-size: 160px;
+        }
+
+        #德国 {
+            position: absolute;
+            top: 3950px;
+            left: 3200px;
+            color: black;
+            z-index: 2;
+            font-size: 75px;
+            font-weight: 300;
+        }
+
+        #造出 {
+            position: absolute;
+            top: 4450px;
+            left: 3200px;
+            color: black;
+            z-index: 2;
+            font-size: 75px;
+            font-weight: 300;
+        }
+
+        .播放红-img {
+            position: relative;
+            z-index: 3;
+            height: 800px;
+            left: 350px;
+            top: 600px;
+        }
+
+        .播放-img {
+            position: relative;
+            z-index: 3;
+            height: 200px;
+            width: 200px;
+            left: -400px;
+            top: 250px;
+        }
+
+
+
+
+
+
+        #baibei {
+            width: 100%;
+            height: 3000px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/%E7%99%BD%E8%89%B2.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        #LAMY {
+            position: absolute;
+            top: 5850px;
+            left: 2650px;
+            color: black;
+            z-index: 2;
+            font-size: 170px;
+        }
+
+        #各系列 {
+            position: absolute;
+            top: 5950px;
+            left: 3200px;
+            color: black;
+            z-index: 2;
+            font-size: 170px;
+        }
+
+        #恒星 {
+            position: absolute;
+            top: 6450px;
+            left: 1200px;
+            color: black;
+            z-index: 2;
+            font-size: 100px;
+        }
+
+        #狩猎 {
+            position: absolute;
+            top: 6450px;
+            left: 2600px;
+            color: black;
+            z-index: 2;
+            font-size: 100px;
+        }
+
+        #喜悦 {
+            position: absolute;
+            top: 6450px;
+            left: 4300px;
+            color: black;
+            z-index: 2;
+            font-size: 100px;
+        }
+
+        #LA {
+            position: absolute;
+            top: 6800px;
+            left: 1100px;
+            color: black;
+            z-index: 2;
+            font-size: 70px;
+        }
+
+        #色彩 {
+            position: absolute;
+            top: 6800px;
+            left: 2600px;
+            color: black;
+            z-index: 2;
+            font-size: 70px;
+        }
+
+        #用以 {
+            position: absolute;
+            top: 6800px;
+            left: 4100px;
+            color: black;
+            z-index: 2;
+            font-size: 70px;
+        }
+
+        .黑-img {
+            position: relative;
+            z-index: 2;
+            height: 200px;
+            width: 700px;
+            left: 2900px;
+            top: -400px;
+        }
+
+        #了解 {
+            position: absolute;
+            top: 7620px;
+            left: 2970px;
+            color: white;
+            z-index: 2;
+            font-size: 90px;
+        }
+
+
+
+        #twobi {
+            width: 100%;
+            height: 1500px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E5%88%87%E7%89%87/p24964204.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .hong-img {
+            position: relative;
+            z-index: 2;
+            height: 200px;
+            width: 500px;
+            left: 1600px;
+            top: -800px;
+        }
+
+        #LAM {
+            position: absolute;
+            top: 8890px;
+            left: 1670px;
+            color: white;
+            z-index: 2;
+            font-size: 130px;
+            font-style: italic;
+        }
+
+
+
+        #shenhui {
+            width: 100%;
+            height: 1500px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E5%88%87%E7%89%87/%E5%88%87%E7%89%87/%E5%9B%BE%E5%B1%82%2010.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        #form {
+            position: absolute;
+            top: 10190px;
+            left: 3070px;
+            color: white;
+            z-index: 2;
+            font-size: 90px;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        #what {
+            position: absolute;
+            top: 10350px;
+            left: 2770px;
+            color: white;
+            z-index: 2;
+            font-size: 100px;
+        }
+
+
+
+        .xiaobai-img {
+            position: relative;
+            z-index: 1;
+            height: 1400px;
+            width: 3400px;
+            left: 1700px;
+            top: -800px;
+        }
+
+        .人-img {
+            position: relative;
+            z-index: 2;
+            height: 250px;
+            width: 250px;
+            left: -150px;
+            top: -1700px;
+        }
+
+        #使用 {
+            position: absolute;
+            top: 11250px;
+            left: 2300px;
+            color: black;
+            z-index: 2;
+            font-size: 70px;
+        }
+
+
+
+        #baibei2 {
+            width: 100%;
+            height: 3800px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/%E7%99%BD%E8%89%B2.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        #ch {
+            position: absolute;
+            top: 13350px;
+            left: 2900px;
+            color: black;
+            z-index: 2;
+            font-size: 100px;
+            font-style: italic;
+        }
+
+        #our {
+            position: absolute;
+            top: 13500px;
+            left: 2700px;
+            color: black;
+            z-index: 2;
+            font-size: 110px;
+            font-weight: 1000;
+        }
+
+        .棕-img {
+            position: relative;
+            z-index: 2;
+            height: 800px;
+            width: 800px;
+            left: 1500px;
+            top: -3300px;
+        }
+
+        .五十-img {
+            position: relative;
+            z-index: 2;
+            height: 1200px;
+            width: 800px;
+            left: 700px;
+            top: -2000px;
+        }
+
+        .蓝白-img {
+            position: relative;
+            z-index: 2;
+            height: 1250px;
+            width: 800px;
+            left: 1000px;
+            top: -2700px;
+        }
+
+        .红蓝-img {
+            position: relative;
+            z-index: 2;
+            height: 590px;
+            width: 800px;
+            left: 200px;
+            top: -2000px;
+        }
+
+        .绿色-img {
+            position: relative;
+            z-index: 2;
+            height: 800px;
+            width: 800px;
+            left: 500px;
+            top: -3300px;
+        }
+
+        .彩色-img {
+            position: relative;
+            z-index: 2;
+            height: 1200px;
+            width: 800px;
+            left: -300px;
+            top: -2000px;
+        }
+
+        .戳我-img {
+            position: relative;
+            z-index: 2;
+            height: 250px;
+            width: 800px;
+            left: -2200px;
+            top: -1500px;
+        }
+
+
+
+        #shennhui {
+            width: 100%;
+            height: 1500px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E5%88%87%E7%89%87/%E5%9B%BE%E5%B1%82%2016.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        #baibei3 {
+            width: 100%;
+            height: 1500px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/%E7%99%BD%E8%89%B2.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .xiaobai2-img {
+            position: relative;
+            z-index: 1;
+            height: 1800px;
+            width: 3400px;
+            left: 1700px;
+            top: -2300px;
+        }
+
+        .上-img {
+            position: relative;
+            z-index: 3;
+            height: 400px;
+            width: 1300px;
+            left: 2000px;
+            top: -200px;
+        }
+
+        .中-img {
+            position: relative;
+            z-index: 3;
+            height: 400px;
+            width: 1300px;
+            left: 700px;
+            top: 300px;
+        }
+
+        .下-img {
+            position: relative;
+            z-index: 3;
+            height: 400px;
+            width: 1300px;
+            left: -600px;
+            top: 800px;
+        }
+
+        #You {
+            position: absolute;
+            top: 19200px;
+            left: 3500px;
+            color: black;
+            z-index: 3;
+            font-size: 80px;
+            font-weight: 1000;
+        }
+
+        #It {
+            position: absolute;
+            top: 19700px;
+            left: 3500px;
+            color: black;
+            z-index: 3;
+            font-size: 80px;
+            font-weight: 1000;
+        }
+
+        #Love {
+            position: absolute;
+            top: 20200px;
+            left: 3500px;
+            color: black;
+            z-index: 3;
+            font-size: 80px;
+            font-weight: 1000;
+        }
+
+        .新品推荐-img {
+            position: relative;
+            z-index: 3;
+            height: 250px;
+            width: 800px;
+            left: -900px;
+            top: 1300px;
+        }
+
+
+
+        #bi {
+            width: 100%;
+            height: 4000px;
+            background-image: url("https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E5%88%87%E7%89%87/u%3D2841084098%2C2707058765%26fm%3D27%26gp%3D0.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        #LAMYB {
+            position: absolute;
+            top: 24200px;
+            left: 3800px;
+            color: white;
+            z-index: 3;
+            font-size: 300px;
+            font-weight: 1000;
+            font-style: italic;
+        }
+
+        #GOOD {
+            position: absolute;
+            top: 24350px;
+            left: 4800px;
+            color: black;
+            z-index: 3;
+            font-size: 70px;
+            font-weight: 1000;
+        }
+
+        #CUTE {
+            position: absolute;
+            top: 24350px;
+            left: 3500px;
+            color: Black;
+            z-index: 3;
+            font-size: 70px;
+            font-weight: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gangbi"></div>
+    <div class="nav">
+        <div>新品推荐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>在线购买产品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>img_lamylogo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>企业礼包&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>品牌介绍</div>
+    </div>
+    <h1 id="L">LAMY</h1>
+    <h1 id="D">Design.Made in Germany</h1>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E7%BA%A2.png" class="HONG-img">
+    <h1 id="text1">the best pew is</br> &nbsp;&nbsp;&nbsp;&nbsp;just LAMY</h1>
+
+
+
+
+
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/%E7%81%B0%E8%89%B2.png" class="huibei1-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/%E6%89%8B%E6%8F%A1%E7%AC%94.png"
+        class="shouwobi-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E9%80%8F%E7%BA%A2.png" class="播放红-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E6%92%AD%E6%94%BE.png" class="播放-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/qiepian/%E7%99%BD%E8%89%B2.png" class="baise-img">
+    <h1 id="lamy">Welcome to Lame</h1>
+    <h1 id="德国">德国书写工具品牌LAMY创始人C·Jose Lamy于1930年在海德<br />堡创立了欧瑟斯墨水笔制造厂.1952年,崭露头角的LAMY
+        流线<br />型墨水笔,震撼问世,彰显公司的创新敏锐触觉。1966年终于打</h1>
+    <h1 id="造出">造出令人耳目一新的现代经典之作-LAMY 2000系列。产品撮合<br />了聚碳酸酯与不锈钢材质,绝妙的搭配，使之从芸芸众生的书写<br />工具中脱颖而出。时至今日，依然在市场具有影响力。</h1>
+
+
+
+
+
+    <div id="baibei"></div>
+    <h1 id="LAMY">LAMY</h1>
+    <hi id="各系列">各系列</hi>
+    <hi id="恒星">【恒星系列 墨水笔】</hi>
+    <hi id="狩猎">【狩猎系列限量色墨水笔】</hi>
+    <hi id="喜悦">【喜悦系列美术笔】</hi>
+    <hi id="LA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LAMY 恒星系列延续了
+        LAMY<br />的时尚造型,打造出锦上添花的极致品质<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。此系列全部均由氧化<br />&nbsp;&nbsp;&nbsp;独特的凹陷式笔握以及弹性钢线笔夹<br />丰富的颜色让LAMY恒星系列突破了传统<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;散发着无限的青春魅力。
+    </hi>
+    <hi id="色彩">
+        色彩丰富，颜色亮丽，不仅是可以作为书<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;写工具，同样是很好的装饰品<br />宽大的笔夹设计,可随时夹在包袋、牛仔裤、<br />&nbsp;&nbsp;&nbsp;T恤袖口上,让您感受创意方便的携带方<br />&nbsp;&nbsp;&nbsp;笔身通体材质采用车用强力ABS材料。
+    </hi>
+    <hi id="用以">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用以绘图、写艺术字、艺术签名<br />&nbsp;&nbsp;扁平状的笔尖设计，适合书写艺术字<br />立体感极佳,1、1.5、1.9三种笔尖可供选择<br />，可书写粗细不等的立体字，让您随时<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感受变化的乐趣复古的笔杆设计<br />，经典又与众不同，显示出独特的欣赏品味
+    </hi>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E4%BA%86%E8%A7%A3%E8%AF%A6%E6%83%85.png" class="黑-img">
+    <hi id="了解">了解详情 &nbsp; >></hi>
+
+
+
+    <div id="twobi"></div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E7%BA%A2.png" class="hong-img">
+    <hi id="LAM">LAMY</hi>
+
+
+
+    <div id="shenhui"></div>
+    <hi id="form">Form Germany</hi>
+    <hi id="what">What people are saying ?</hi>
+
+
+
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E5%88%87%E7%89%87/%E5%88%87%E7%89%87/%E5%9B%BE%E5%B1%82%2011.png"
+        class="xiaobai-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E4%BA%BA.png" class="人-img">
+    <hi id="使用">使用令人难以置信的生产技术和坚持极高水平的精准要求，仅使用一种<br />材质，也足以成就出这款永恒的设计，产品本身是体现不同加工程序和<br />制造工艺。手工打磨的亚光拉丝表面充分体现了品牌对细节的注重。
+    </hi>
+
+
+
+    <div id="baibei2"></div>
+    <hi id="ch">Choose</hi>
+    <hi id="our">Our products</hi>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/6-%E6%A3%95.png" class="棕-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/6-50.png" class="五十-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/6-%E8%93%9D%E7%99%BD.png" class="蓝白-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/6-%E7%BA%A2%E8%93%9D.png" class="红蓝-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/6-%E7%BB%BF%E8%89%B2.png" class="绿色-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/6-%E5%BD%A9%E8%89%B2.png" class="彩色-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E9%80%9F%E8%B4%AD%E3%80%822.png" class="戳我-img"
+        title="感觉挺贵的，多钱呢">
+
+
+
+    <div id="shennhui"></div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/1.png" class="上-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/2.png" class="中-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/3.png" class="下-img">
+    <div id="You">You make millions of delicious that is<br /> mean nothing. and then one day your<br />order takes out
+        life.</div>
+    <div id="It">It's sad when you realize you aren't<br /> it as important to someone as you<br /> thought you were.
+    </div>
+    <div id="Love">Love is unequal, so don't count how <br />much one contributes, and which is<br /> more active.</div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/2/%E6%96%B0%E5%93%81%E6%8E%A8%E8%8D%90.png"
+        class="新品推荐-img" title="看的我也想买这个笔了">
+
+
+
+    <div id="baibei3"></div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E5%88%87%E7%89%87/%E5%88%87%E7%89%87/%E5%9B%BE%E5%B1%82%2011.png"
+        class="xiaobai2-img">
+
+
+
+    <div id="bi" title="好累，我要去睡觉了。学长你也辛苦了"></div>
+    <div id="LAMYB">LAMY</div>
+    <div id="CUTE">CUTE</br>useful</div>
+    <div id="GOOD">GOOD</br>SIMPLE</div>
+
+</body>
+
+</html>
