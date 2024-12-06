@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        .云顶图标-img {
+            position: absolute;
+            border-radius: 50%;
+            top: 700px;
+            left: 800px;
+            width: 400px;
+            height: 400px;
+            z-index: 0;
+            box-shadow: 10px 10px 20px 20px rgba(1, 9, 11, 1);
+        }
+
+        #欢迎回来 {
+            position: absolute;
+            top: 700px;
+            left: 1300px;
+            color: black;
+            z-index: 0;
+            font-size: 140px;
+            font-weight: 500;
+        }
+
+        .nav {
+            position: absolute;
+            top: 1200px;
+            left: 1600px;
+            display: flex;
+            justify-content: space-around;
+            z-index: 0;
+            color: rgb(8, 1, 1);
+            font-size: 100px;
+        }
+
+        .lin-img {
+            position: absolute;
+            ;
+            top: 560px;
+            left: 5850px;
+            width: 250px;
+            height: 250px;
+            z-index: 0;
+        }
+
+        #邮箱动态 {
+            position: absolute;
+            top: 1600px;
+            left: 900px;
+            color: black;
+            z-index: 0;
+            font-size: 140px;
+            font-weight: 500;
+        }
+
+        .通讯录-img {
+            position: absolute;
+            ;
+            top: 1800px;
+            left: 5650px;
+            width: 110px;
+            height: 120px;
+            z-index: 0;
+        }
+
+        .摄像头-img {
+            position: absolute;
+            ;
+            top: 1790px;
+            left: 5830px;
+            width: 150px;
+            height: 140px;
+            z-index: 0;
+        }
+
+
+
+        .泡泡1-img {
+            position: absolute;
+            ;
+            top: 2000px;
+            left: 940px;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+        }
+
+        .泡泡2-img {
+            position: absolute;
+            ;
+            top: 2230px;
+            left: 940px;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+        }
+
+        .button2 {
+            display: inline-block;
+            width: 370px;
+            height: 210px;
+            background-color: rgb(170, 219, 244);
+            top: 1950px;
+            left: 900px;
+            position: absolute;
+            border-radius: 30px;
+            z-index: 1;
+        }
+
+        .button2::after {
+            content: " ";
+            display: inline-block;
+            width: 15px;
+            height: 16px;
+            border-left: 100px solid rgb(204, 239, 246);
+            transform: translateX(350px) translateY(270px);
+            border-radius: 30px;
+            border-bottom: 50px solid transparent;
+            border-top: 50px solid transparent;
+            z-index: 1;
+        }
+
+        .yi-img {
+            position: absolute;
+            ;
+            top: 2070px;
+            left: 1700px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        .er-img {
+            position: absolute;
+            ;
+            top: 2470px;
+            left: 1700px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        .san-img {
+            position: absolute;
+            ;
+            top: 2870px;
+            left: 1700px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+
+        #y1 {
+            position: absolute;
+            top: 2050px;
+            left: 2000px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #y2 {
+            position: absolute;
+            top: 2450px;
+            left: 2000px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #y3 {
+            position: absolute;
+            top: 2850px;
+            left: 2000px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #未读 {
+            position: absolute;
+            top: 1940px;
+            left: 1060px;
+            color: rgb(14, 6, 6);
+            z-index: 1;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #已读 {
+            position: absolute;
+            top: 2170px;
+            left: 1060px;
+            color: rgb(14, 6, 6);
+            z-index: 1;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #er1 {
+            position: absolute;
+            top: 2050px;
+            left: 3900px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #er2 {
+            position: absolute;
+            top: 2450px;
+            left: 3900px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #er3 {
+            position: absolute;
+            top: 2850px;
+            left: 3900px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #s1 {
+            position: absolute;
+            top: 2050px;
+            left: 4800px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #s2 {
+            position: absolute;
+            top: 2450px;
+            left: 4800px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #s3 {
+            position: absolute;
+            top: 2850px;
+            left: 4800px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #h1 {
+            position: absolute;
+            top: 2050px;
+            left: 5300px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #h2 {
+            position: absolute;
+            top: 2450px;
+            left: 5300px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #h3 {
+            position: absolute;
+            top: 2850px;
+            left: 5300px;
+            color: gray;
+            z-index: 0;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        #去写信 {
+            position: absolute;
+            top: 2980px;
+            left: 5740px;
+            color: rgb(17, 4, 4);
+            z-index: 0;
+            font-size: 70px;
+            font-weight: 500;
+        }
+
+        .蓝-img {
+            position: absolute;
+            ;
+            top: 3260px;
+            left: 600px;
+            width: 5700px;
+            height: 200px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border: 30px solid rgb(172, 199, 227);
+                width: 5800px;
+                height:3000px;
+                margin: 480px;
+                border-radius: 180px;
+                box-shadow:-10px -10px 50px 50px rgba(149, 206, 220, 0.4);">
+    </div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E4%BA%91%E9%A1%B6.jpg" class="云顶图标-img">
+    <h1 id="欢迎回来">欢迎回来</h1>
+    <div class="nav">
+        <div>
+            今日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div>
+            讯息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div>
+            服务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div>
+            校园&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div>我的</div>
+    </div>
+    <div style="width: 4800px;
+                height: 250px;
+                background-color: rgba(155, 229, 229, 0.2);
+                top:1150px;
+                left:1250px;
+                position: absolute;
+                border-radius: 50px;"></div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/00.png" class="lin-img">
+    <h1 id="邮箱动态">邮箱动态-收件箱</h1>
+    <div style="width: 4000px;
+                height: 330px;
+                background:linear-gradient(to right ,rgb(180, 227, 232),white);
+                top:2400px;
+                left:1600px;
+                position: absolute;
+                border-radius: 50px;
+                box-shadow:10px 10px 10px 10px rgba(1, 12, 14, 0.2);"></div>
+    <div style="width: 4000px;
+                height: 330px;
+                background:linear-gradient(to right ,rgb(180, 227, 232),white);
+                top:2800px;
+                left:1600px;
+                position: absolute;
+                border-radius: 50px;
+                box-shadow:10px 10px 10px 10px rgba(1, 12, 14, 0.2);"></div>
+    <div style="width: 4000px;
+                height: 330px;
+                background:linear-gradient(to right ,rgb(180, 227, 232),white);
+                top:2000px;
+                left:1600px;
+                position: absolute;
+                border-radius: 50px;
+                box-shadow:10px 10px 10px 10px rgba(1, 12, 14, 0.2);"></div>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E9%80%9A%E8%AE%AF%E5%BD%95%281%29.png" class="通讯录-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E6%91%84%E5%83%8F%E6%9C%BA%2C%E5%BD%95%E5%83%8F%E6%9C%BA.png"
+        class="摄像头-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E6%B3%A1%E6%B3%A1.png" class="泡泡1-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/%E6%B3%A1%E6%B3%A1.png" class="泡泡2-img">
+    <a href="第二次作业.html" class="button2"></a>
+    <div style="width: 370px;
+                height: 210px;
+                background-color: rgb(204, 239, 246);
+                top:2170px;
+                left:900px;
+                position: absolute;
+                border-radius: 30px;
+                display:inline-block;"></div>
+    <div style="width: 370px;
+                height: 210px;
+                background-color: rgb(170, 219, 244);
+                top:1950px;
+                left:900px;
+                position: absolute;
+                border-radius: 30px;"></div>
+    <h1 id="未读">未 读</h1>
+    <h1 id="已读">已 读</h1>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/11.png" class="yi-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/22.png" class="er-img">
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/33.png" class="san-img">
+    <h1 id="y1">邮件缩略信息。。。</h1>
+    <h1 id="y2">邮件缩略信息。。。</h1>
+    <h1 id="y3">邮件缩略信息。。。</h1>
+    <h1 id="er1">2024.2.20</h1>
+    <h1 id="er2">2024.2.20</h1>
+    <h1 id="er3">2024.2.20</h1>
+    <h1 id="s1">删除</h1>
+    <h1 id="s2">删除</h1>
+    <h1 id="s3">删除</h1>
+    <h1 id="h1">回复</h1>
+    <h1 id="h2">回复</h1>
+    <h1 id="h3">回复</h1>
+    <div style="width: 290px;
+                    height: 150px;
+                    background-color: rgb(53, 214, 223);
+                    top:3000px;
+                    left:5700px;
+                    position: absolute;
+                    border-radius: 50px;"></div>
+    <h1 id="去写信">去写信</h1>
+    <img src="https://yunding-wlj.oss-cn-beijing.aliyuncs.com/Vector.png" class="蓝-img">
+</body>
+
+</html>
